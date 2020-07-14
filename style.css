@@ -1,0 +1,84 @@
+* {
+    font-family: 'Noto Sans TC', sans-serif;
+    transition: .2s all;
+    font-weight: 600;
+}
+
+body {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+
+    margin: 0;
+    padding: 0;
+
+    padding: 0;
+    background-color: #222;
+    color: #fafafa;
+}
+
+/*About*/
+.about {
+    margin: 50px auto;
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 50px;
+}
+
+.about-description {
+    font-size: 18px;
+}
+
+/*App*/
+#app {
+    margin: 0 auto;
+    width: 240px;
+    box-shadow: 0 2px 4px #ccc;
+}
+
+input[type="text"] {
+    width: 230px;
+    border: 0;
+    color: #333;
+    font-size: 18px;
+    padding: 5px;
+    text-align: right;
+}
+
+input:focus {
+    outline: none;
+}
+
+.grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/*Cell*/
+.cell {
+    flex: 33.3333333333%;
+    height: 50px;
+    font-size: 18px;
+    border: none;
+}
+
+.cell:hover {
+    opacity: .8;
+}
+
+.cell:focus {
+    outline: none;
+}
+
+/*Op*/
+.op {
+    background-color: #4fc08d;
+}
+
+.op:hover {
+    opacity: .8;
+}
