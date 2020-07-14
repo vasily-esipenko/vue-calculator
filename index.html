@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Simple Calculator">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Vasily Esipenko">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    </head>
+    <body>
+        <div class="about">
+            <h1>Calculator</h1>
+            <div class="about-description">
+                <p>A simple Vue.js arithmetic calculator</p>
+            </div>
+        </div>
+        <div id="app">
+            <div class="grid">
+                <input type="text" v-on:keyup.enter="calc()" v-model="result" placeholder="0">
+                <button class="cell num" v-on:click="input(num)" v-for="num in numbers">{{ num }}</button>
+                <button class="cell op" v-on:click="input(op)" v-for="op in operations">{{ op }}</button>
+                <button class="cell op" v-on:click="reset()">CE</button>
+                <button class="cell op" v-on:click="calc()">=</button>
+            </div>
+        </div>
+        <script text="text/javascript" charset="utf-8" src="script.js"></script>
+        <script src="https://kit.fontawesome.com/c1c239f91b.js" crossorigin="anonymous"></script>
+    </body>
+</html>
