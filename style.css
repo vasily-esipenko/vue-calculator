@@ -19,7 +19,7 @@ body {
 
 /*About*/
 .about {
-    margin: 50px auto;
+    margin: 35px auto;
     text-align: center;
 }
 
@@ -33,7 +33,7 @@ body {
 
 /*App*/
 #app {
-    margin: 0 auto;
+    margin: 0 auto 15px;
     width: 240px;
     box-shadow: 0 2px 4px #ccc;
 }
@@ -80,5 +80,32 @@ input:focus {
 }
 
 .op:hover {
+    opacity: .8;
+}
+
+/*Footer*/
+footer {
+    padding: 12px;
+    background-color: transparent;
+
+    color: #fafafa;
+    line-height: 1.4;
+    font-size: 15px;
+
+    font-weight: 200;
+    font-style: italic;
+    text-align: left;
+}
+
+.about-a--footer {
+    display: inline-flex;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    margin-left: 12px;
+    transition: opacity .1s linear;
+}
+
+.about-a--footer:hover {
     opacity: .8;
 }
