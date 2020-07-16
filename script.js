@@ -6,14 +6,14 @@ var app = new Vue({
         operations: ["+", "-", "*", "/"]
     },
     methods: {
-        input: function(char) {
+        input(char) {
             this.result = this.result.toString();
             this.result += char;
         },
-        calc: function() {
+        calc() {
             this.result = eval(this.result);
         },
-        reset: function() {
+        reset() {
             this.result = "";
         }
     }
