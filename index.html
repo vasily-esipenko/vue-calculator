@@ -20,11 +20,11 @@
         </div>
         <div id="app">
             <div class="grid">
-                <input type="text" v-on:keyup.enter="calc()" v-model="result" placeholder="0">
-                <button class="cell num" v-on:click="input(num)" v-for="num in numbers">{{ num }}</button>
-                <button class="cell op" v-on:click="input(op)" v-for="op in operations">{{ op }}</button>
-                <button class="cell op" v-on:click="reset()">CE</button>
-                <button class="cell op" v-on:click="calc()">=</button>
+                <input type="text" @keyup.enter="calc()" v-model="result" placeholder="0">
+                <button class="cell num" @click="input(num)" v-for="num in numbers">{{ num }}</button>
+                <button class="cell op" @click="input(op)" v-for="op in operations">{{ op }}</button>
+                <button class="cell op" @click="reset()">CE</button>
+                <button class="cell op" @click="calc()">=</button>
             </div>
         </div>
         <footer>
