@@ -12,34 +12,36 @@
         <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     </head>
     <body>
-        <div class="about">
-            <h1>Calculator</h1>
-            <div class="about-description">
-                <p>A simple Vue.js arithmetic calculator</p>
-            </div>
-        </div>
-        <div id="app">
-            <div class="grid">
-                <input type="text" @keyup.enter="calc()" v-model="result" placeholder="0">
-                <button class="cell num" @click="input(num)" v-for="num in numbers">{{ num }}</button>
-                <button class="cell op" @click="input(op)" v-for="op in operations">{{ op }}</button>
-                <button class="cell op" @click="reset()">CE</button>
-                <button class="cell op" @click="calc()">=</button>
-            </div>
-        </div>
-        <footer>
-                <div>Vasily Esipenko, 2020
-                    <a class="about-a about-a--footer" href="https://t.me/Vasily_Esipenko" target="_blank">
-                        <i class="fab fa-telegram"></i>
-                    </a>
-                    <a class="about-a about-a--footer" href="https://github.com/vasily-esipenko" target="_blank">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a class="about-a about-a--footer" href="https://stackoverflow.com/users/13187161/vasily-esipenko?tab=profile" target="_blank">
-                        <i class="fab fa-stack-overflow"></i>
-                    </a>
+        <div class="page">
+            <header class="about">
+                <h1>Calculator</h1>
+                <div class="about-description">
+                    <p>A simple Vue.js arithmetic calculator</p>
                 </div>
-        </footer>
+            </header>
+            <main id="app">
+                <div class="grid">
+                    <input type="text" @keyup.enter="calc()" v-model="result" placeholder="0">
+                    <button class="cell num" @click="input(num)" v-for="num in numbers">{{ num }}</button>
+                    <button class="cell op" @click="input(op)" v-for="op in operations">{{ op }}</button>
+                    <button class="cell op" @click="reset()">CE</button>
+                    <button class="cell op" @click="calc()">=</button>
+                </div>
+            </main>
+            <footer>
+                    <div>Vasily Esipenko, 2020
+                        <a class="about-a about-a--footer" href="https://t.me/Vasily_Esipenko" target="_blank">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a class="about-a about-a--footer" href="https://github.com/vasily-esipenko" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a class="about-a about-a--footer" href="https://stackoverflow.com/users/13187161/vasily-esipenko?tab=profile" target="_blank">
+                            <i class="fab fa-stack-overflow"></i>
+                        </a>
+                    </div>
+            </footer>
+        </div>
         <script text="text/javascript" charset="utf-8" src="script.js"></script>
         <script src="https://kit.fontawesome.com/c1c239f91b.js" crossorigin="anonymous"></script>
     </body>
