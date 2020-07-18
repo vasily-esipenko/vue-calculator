@@ -17,6 +17,13 @@ body {
     color: #fafafa;
 }
 
+.page {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 /*About*/
 .about {
     margin: 35px auto;
@@ -87,6 +94,7 @@ input:focus {
 footer {
     padding: 12px;
     background-color: transparent;
+    margin-top: auto;
 
     color: #fafafa;
     line-height: 1.4;
