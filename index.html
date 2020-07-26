@@ -13,12 +13,14 @@
     </head>
     <body>
         <div class="page">
+
             <header class="about">
                 <h1>Calculator</h1>
                 <div class="about-description">
                     <p>A simple Vue.js arithmetic calculator</p>
                 </div>
             </header>
+
             <main id="app">
                 <div class="grid">
                     <input type="text" @keyup.enter="calc()" v-model="result" placeholder="0">
@@ -28,6 +30,7 @@
                     <button class="cell op" @click="calc()">=</button>
                 </div>
             </main>
+
             <footer>
                     <div>Vasily Esipenko, 2020
                         <a class="about-a about-a--footer" href="https://t.me/Vasily_Esipenko" target="_blank">
@@ -41,6 +44,7 @@
                         </a>
                     </div>
             </footer>
+            
         </div>
         <script text="text/javascript" charset="utf-8" src="script.js"></script>
         <script src="https://kit.fontawesome.com/c1c239f91b.js" crossorigin="anonymous"></script>
