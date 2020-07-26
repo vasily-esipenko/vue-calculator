@@ -3,7 +3,7 @@ var app = new Vue({
     data: {
         result: "",
         numbers: [1, 2, 3, 4, 5, 6, 7, 8, 9, 0],
-        operations: ["+", "-", "*", "/"]
+        operations: ["+", "-", "*", "/", "."],
     },
     methods: {
         input(char) {
@@ -11,7 +11,14 @@ var app = new Vue({
             this.result += char;
         },
         calc() {
-            this.result = eval(this.result);
+            if (this.result.length == 0) {
+                alert("You didn't write anything");
+            }
+            try {
+                this.result = eval(this.result);
+            } catch {
+                alert("Something went wrong... Try again");
+            }
         },
         reset() {
             this.result = "";
